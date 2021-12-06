@@ -27,7 +27,7 @@ import Foundation
 ///
 /// For more background on this, see [Triggering the Local Network Privacy Alert](https://developer.apple.com/forums/thread/663768).
 
-func triggerLocalNetworkPrivacyAlert() {
+public func triggerLocalNetworkPrivacyAlert() {
 	let sock4 = socket(AF_INET, SOCK_DGRAM, 0)
 	guard sock4 >= 0 else { return }
 	defer { close(sock4) }
