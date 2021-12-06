@@ -27,6 +27,7 @@ let package = Package(
 #if os(Linux)
 		targets[0].dependencies = [.product(name: "Crypto", package: "swift-crypto")]
 		targets[0].exclude = ["MLLogger.swift"]
+		targets[0].exclude = ["MLNetworking.swift"]
 #endif
 		return targets
 	}()
