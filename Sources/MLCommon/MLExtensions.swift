@@ -24,6 +24,10 @@ public extension Bool {
 }
 
 public extension Int {
+	var doubleValue: Double {
+		return Double(self)
+	}
+	
 	func bool() -> Bool {
 		return self == 1 ? true : false
 	}
